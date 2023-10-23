@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Calculators</title>
-    <link rel="stylesheet" href="/styles/futureValueCalculator.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial Calculators</title>
+        <link 
+            rel="stylesheet" href="/styles/futureValueCalculator.css"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+    </head>
     <nav>
         <a href="/html/index.html">Mortgage Calculator</a>
         <a href="/html/futureValueCalculator.html">Future Value Calculator</a>
         <a href="/html/presentValueAnnuityCalculator.html">Present Value Annuity Calculator</a>
     </nav>
-    <h1>Future Value Calculator</h1>
+    <body
+        class="d-flex flex-column justify-content-center align-items-center"
+        style="min-height: 100vh"
+    >
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center text-uppercase">Future Value Calculator</h1>
 
-    <script src="scripts/futureValueDeposit.js"></script>
-</body>
+    <p class ="text-center">Deposit: <input type="number" id="depositField" /></p>
+    <p class="text-center">Interest Rate: <input type="number" id="interestRateField" /></p>
+    <p class="text-center">Years: <input type="number" id="yearsField" /></p>
+
+    <input type="button" value="Calculate" id="calculateButton" />
+
+    <p class="text-center">Future Value: <input type="number" id="futureValueField" readonly /></p>
+    <p class="text=center">Total Interest: <input type="number" id="totalInterestField" readonly /></p>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/scripts/futureValueDeposit.js"></script>
+    </body>
 </html>
