@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Calculators</title>
-    <link rel="stylesheet" href="/styles/presentValvueAnnuityCalculator.css">
+    <link rel="stylesheet" href="/styles/presentValueAnnuityCalculator.css">
 </head>
-<body>
-    <nav>
-        <a href="/html/index.html">Mortgage Calculator</a>
-        <a href="/html/futureValueCalculator.html">Future Value Calculator</a>
-        <a href="/html/presentValueAnnuityCalculator.html">Present Value Annuity Calculator</a>
-    </nav>
-    <h1>Present Value Annuity Calculator</h1>
+<nav class="text-center">
+    <a href="/html/index.html">Mortgage Calculator</a>
+    <a href="/html/futureValueCalculator.html">Future Value Calculator</a>
+    <a href="/html/presentValueAnnuityCalculator.html"
+        >Present Value Annuity Calculator</a
+    >
+</nav>
+<body class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center text-uppercase">Present Value Annuity Calculator</h1>
 
-    <script src="scripts/presentValueAnnuityCalculator.js"></script>
+                <form id="futureValueForm">
+                    <p class="text-center">Monthyly Payout: <input type="number" id="monthlyPayoutField" /></p>
+                    <p class="text-center">Expected Interest Rate: <input type="number" id="expectedInterestRateField" /></p>
+                    <p class="text-center">Years To Payout: <input type="number" id="yearsToPayoutField" /></p>
+
+                    <input type="button" value="Calculate" id="calculateButton" />
+                    <input type="reset" value="Reset" id="resetButton"/>
+
+                <p class="text-center">Present Value: <input type="number" id="presentValueField" readonly /></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/scripts/futureValueDeposit.js"></script>
 </body>
 </html>

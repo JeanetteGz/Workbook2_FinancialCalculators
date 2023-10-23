@@ -11,4 +11,5 @@
 
 
 <h3>Present Value Annuity Page</h3>
+<img src="/images/readme_images/presentValue_annuity.png">
 <p>On this page the user would be able to calculate the present value of an ordinary annuity. The user would have to input the monthly payout, expected interest rate, and the years to pay out.</p>

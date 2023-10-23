@@ -22,6 +22,13 @@
     font-size: 16px;
     padding: 10px 20px;
 }
+#resetButton {
+    background-color: #3d4349;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+}
 nav a {
     font-size: 18px;
     color: #ce61e4;
