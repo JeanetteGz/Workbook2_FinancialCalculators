@@ -1,7 +1,13 @@
 .card {
     background-color: #ffffff; 
-    border-radius: 15px; 
+    border-radius: 15px;
     text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+    max-width: 500px;
 }
 .card-body {
     font-family: Arial, sans-serif; 
@@ -10,15 +16,25 @@
     padding: 20px; 
 }
 #calculateButton {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #3d4349;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+#resetButton {
+    background-color: #3d4349;
+    color: #ffffff;
     font-weight: bold;
     font-size: 16px;
     padding: 10px 20px;
 }
 nav a {
     font-size: 18px;
-    color: #007bff;
+    color: #ce61e4;
     text-decoration: none;
     margin: 0 10px;
+}
+body {
+    background-image: url(/images/gradient.jpg);
 }

@@ -21,29 +21,29 @@
         class="d-flex flex-column justify-content-center align-items-center"
         style="min-height: 100vh"
     >
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-center text-uppercase">
-                        Mortgage Calculator
-                    </h1>
-
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center text-uppercase">Mortgage Calculator</h1>
+                <form id="mortgageForm">
                     <p class="text-center">Principal: <input type="number" id="principalField" /></p>
                     <p class="text-center">Interest Rate: <input type="number" id="interestRateField" /></p>
                     <p class="text-center">Loan Length: <input type="number" id="loanLengthField" /></p>
-
+                
                     <div class="text-center mt-3">
                         <div style="margin-bottom: 15px;">
-                        <input type="button" value="Calculate" id="calculateButton"/>
+                            <input type="button" value="Calculate" id="calculateButton" />
+                            <input type="reset" value="Reset" id="resetButton" />
+                            <p class="text-center">
+                                Monthly Payment: <input type="number" id="monthlyPaymentField" readonly />
+                            </p>
+                            <p class="text-center">Total Interest: <input type="number" id="totalInterestField" readonly </p>
+                        </div>
                     </div>
-
-                    <p class="text-center">
-                        Monthly Payment: <input type="number" id="monthlyPaymentField" readonly/></p>
-                    <p class="text-center">Total Interest: <input type="number" id="totalInterestField" readonly /></p>
-                </div>
+                </form>                
             </div>
         </div>
-
+    </div>    
         <!-- Include Bootstrap JS from a CDN -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- Include your custom JavaScript -->
