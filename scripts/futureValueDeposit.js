@@ -11,12 +11,11 @@ function handleOnLoad() {
 function handleCalculateOnClick() {
     console.log("Calculate button clicked");
 
-    // Get user inputs from HTML input fields.
+    // Get user inputs from HTML fields.
     const depositInputEl = document.getElementById("depositField");
     const interestRateInputEl = document.getElementById("interestRateField");
     const yearsInputField = document.getElementById("yearsField");
 
-    // Parse user inputs into floating-point numbers.
     const deposit = parseFloat(depositInputEl.value);
     const interestRate = parseFloat(interestRateInputEl.value) / 100; // Convert interest rate to a decimal.
     const numYears = parseFloat(yearsInputField.value);
