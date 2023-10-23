@@ -16,15 +16,14 @@ function handleCalculateOnClick() {
     const presentValueInputEl = document.getElementById("presentValueField");
 
     const monthlyPayout = parseFloat(monthlyPayoutInputEl.value);
-    const expectedInterestRate = parseFloat(expectedInterestRateInputEl.value);
+    const expectedInterestRate = parseFloat(expectedInterestRateInputEl.value) / 100; // Convert percentage to decimal
     const yearsToPayout = parseFloat(yearsToPayoutInputEl.value);
 
     const numberOfMonths = yearsToPayout * 12;
 
-    // Calculate the present value
+    // Calculate the present value of an ordinary annuity
     const monthlyInterestRate = expectedInterestRate / 12; // Monthly interest rate
-    const presentValue = monthlyPayout * (1 - Math.pow(1 + monthlyInterestRate, -numberOfMonths)) / monthlyInterestRate;
+    const presentValue = monthlyPayout * ((1 - Math.pow(1 + monthlyInterestRate, -numberOfMonths)) / monthlyInterestRate);
 
     presentValueInputEl.value = presentValue.toFixed(2);
 }
-
