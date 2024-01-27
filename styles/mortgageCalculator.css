@@ -1,27 +1,22 @@
 .card {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border-radius: 15px;
     text-align: center;
     margin-top: 20px;
-    padding: 20px;
-    height: 400px;
+    padding: 10px;
     width: 80%;
     margin: 20px auto;
     max-width: 500px;
 }
+
 .card-body {
-    font-family: Arial, sans-serif; 
-    font-size: 18px; 
-    color: #333; 
-    padding: 20px; 
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
 }
-#calculateButton {
-    background-color: #3d4349;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 10px 20px;
-}
+
+#calculateButton,
 #resetButton {
     background-color: #3d4349;
     color: #ffffff;
@@ -29,12 +24,26 @@
     font-size: 16px;
     padding: 10px 20px;
 }
+
 nav a {
     font-size: 18px;
     color: #ce61e4;
     text-decoration: none;
     margin: 0 10px;
 }
+
 body {
     background-image: url(/images/gradient.jpg);
+}
+
+form {
+    margin: 0 auto;
+    text-align: left;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }

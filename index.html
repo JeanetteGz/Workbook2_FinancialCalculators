@@ -4,31 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financial Calculators</title>
-    <!-- Bootstrap CSS from a CDN  -->
+    <!-- Include Bootstrap CSS from a CDN (Content Delivery Network) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <!-- Custom CSS -->
+    <!-- Include your custom CSS -->
     <link rel="stylesheet" href="/styles/mortgageCalculator.css" />
 </head>
-<body class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh">
+
+    
     <nav class="text-center">
         <a href="/index.html">Mortgage Calculator</a>
         <a href="/futureValueCalculator.html">Future Value Calculator</a>
-        <a href="/presentValueAnnuityCalculator.html">Present Value Annuity Calculator</a>
+        <a href="/presentValueAnnuityCalculator.html"
+            >Present Value Annuity Calculator</a
+        >
     </nav>
+    <body
+        class="d-flex flex-column justify-content-center align-items-center"
+        style="min-height: 100vh"
+    >
     <div class="container">
         <div class="card">
             <div class="card-body">
                 <h1 class="text-center text-uppercase">Mortgage Calculator</h1>
                 <form id="mortgageForm">
-                    <!-- Form content goes here -->
-                </form>
+                    <p class="text-center">Principal: <input type="number" id="principalField" /></p>
+                    <p class="text-center">Interest Rate: <input type="number" id="interestRateField" /></p>
+                    <p class="text-center">Loan Length: <input type="number" id="loanLengthField" /></p>
+                
+                    <div class="text-center mt-3">
+                        <div style="margin-bottom: 15px;">
+                            <input type="button" value="Calculate" id="calculateButton" />
+                            <input type="reset" value="Reset" id="resetButton" />
+                            <p class="text-center">
+                                Monthly Payment: <input type="number" id="monthlyPaymentField" readonly />
+                            </p>
+                            <p class="text-center">Total Interest: <input type="number" id="totalInterestField" readonly </p>
+                        </div>
+                    </div>
+                </form>                
             </div>
         </div>
-    </div>
-    <!-- Bootstrap JS from a CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="/scripts/mortgageCalculator.js"></script>
-</body>
+    </div>    
+        <!-- Include Bootstrap JS from a CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Include your custom JavaScript -->
+        <script src="/scripts/mortgageCalculator.js"></script>
+    </body>
 </html>
-
